@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>this dept data</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="deptno">deptno</label>
+            <input type="number" name="deptno" id="deptno"><br><br>
+            <label for="name">dname</label>
+            <input type="text" name="name" id="name" ><br><br>
+            <label for="loc">location</label>
+            <input type="text" name="loc" id="loc"><br><br>
+            <input type="submit" value="submit">
+
+        </form>
+    </center>
+    
+</body>
+</html>
